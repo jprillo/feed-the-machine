@@ -1,0 +1,118 @@
+body{
+    text-align: center;
+}
+#right-eye-moving, #left-eye-moving{
+    animation-duration: 1.5s;
+    animation-name: ckw;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+#bottomLip{
+    animation-duration: .6s;
+    
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    transform:  translate(0%, 5%);
+
+}
+body{
+    overflow: hidden;
+    height: 100vh;
+}
+#more{
+    display: none;
+    margin: auto;
+    color: white;
+    background: red;
+    font-size: 30px;
+    cursor: pointer;
+  
+}
+#more:hover{
+    background: blue;
+}
+#boy{
+    background-image: url(background2.png); background-repeat: no-repeat;background-position: center; background-size: cover; height: 100vh;
+}
+#insideMouth{
+    
+    animation-duration: .6s;    
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    height: 6%;
+
+}
+#bert{
+animation-duration:.8s;
+animation-iteration-count: 1;
+padding: 10px;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+@keyframes ckw {
+    0% {
+        transform:  translate(0%, 0%);
+    }
+    25% {
+        transform:  translate(2%, 0%);
+    }
+    50% {
+        transform:  translate(-2%, 0%);
+    }
+    75% {
+        transform:  translate(2%, 0%);
+    }
+    100% {
+        transform:  translate(0%, 0%);
+
+    }
+}
+@keyframes lip {
+    0% {
+        transform:  translate(0%, 5%);
+    }
+    25% {
+        transform:  translate(0%, 0%);
+    }
+    50% {
+        transform:  translate(0%, 5%);
+    }
+    75% {
+        transform:  translate(0%, 0%);
+    }
+    100% {
+        transform:  translate(0%, 5%);
+
+    }
+}
+@keyframes mouth {
+    0% {
+      height: 6%;
+    }
+    25% {
+      height: 2%;
+    }
+    50% {
+        height: 6%;
+    }
+    75% {
+        height: 2%;
+    }
+    100% {
+       height: 6%;
+    }
+}
